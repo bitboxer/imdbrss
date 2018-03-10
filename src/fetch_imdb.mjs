@@ -12,7 +12,8 @@ function parseEntry(row) {
   const title = `Rated "${titleElement.text()}" ${rating}/10`;
   const url = `http://www.imdb.com${titleElement.attr('href')}`;
   const content = Array.from(entry.find('.lister-item-content p'));
-  const date = moment(cheerio(content[1]).text().replace('Rated on', '').trim(), 'DD MMM YYYY').toDate();
+  const dateString = cheerio(content[1]).text().replace('Rated on', '').trim();
+  const date = moment.utc(dateString, 'DD MMM YYYY').toDate();
   const text = cheerio(content[2]).text();
   const image = entry.find('.lister-item-image img').attr('loadlate');
   const description = `<img src="${image}"/><p>${text}</p>`;
