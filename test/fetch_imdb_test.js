@@ -17,7 +17,7 @@ describe('FetchImdb', () => {
     expect(result).to.eql(rss);
 
     MockDate.reset();
-  }).timeout(1000);
+  }).timeout(2000);
 
   it('returns an empty rss feed when the imdb ratings page was empty', async () => {
     MockDate.set('Wed, 10 Dec 2017 19:04:57 GMT');
