@@ -17,10 +17,12 @@
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.4",
+    "mockdate": "^2.0.2",
     "moment": "^2.20.1",
     "node-fetch": "^2.0.0",
     "nodemon": "^1.15.1",
-    "npm-watch": "^0.3.0"
+    "npm-watch": "^0.3.0",
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "chai": "4.1.2",
