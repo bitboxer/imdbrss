@@ -1,0 +1,23 @@
+{
+  "name": "VÖBB iCal Feed",
+  "description": "A ical feed for the VÖBB library",
+  "repository": "https://github.com/bitboxer/voebb-ical",
+  "keywords": ["voebb", "vöbb", "ical"],
+  "env": {
+    "VOEBB_TOKEN": {
+      "description": "The token for the ical feed url",
+      "generator": "secret",
+      "required": true
+    },
+    "VOEBB_ID": {
+      "description": "The id of your library card",
+      "value": "",
+      "required": true
+    },
+    "VOEBB_PASSWORD": {
+      "description": "Your password",
+      "value": "",
+      "required": true
+    }
+  }
+}
