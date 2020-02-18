@@ -12,7 +12,7 @@ that follow these steps:
 
 ```shell
 yarn
-npm start
+yarn start
 ```
 
 The rss feed will be reachable under `localhost:4000/rss/{{IMDb User ID}}`.
