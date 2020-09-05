@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import '@babel/polyfill';
 import cheerio from 'cheerio';
 import moment from 'moment';
 import nodeFetch from 'node-fetch';
