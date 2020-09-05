@@ -7,12 +7,13 @@
   "license": "Apache-2.0",
   "@std/esm": "cjs",
   "dependencies": {
-    "@std/esm": "^0.26.0",
-    "@babel/core": "^7.11.6",
     "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
+    "@std/esm": "^0.26.0",
     "cheerio": "^1.0.0-rc.3",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
@@ -41,9 +42,9 @@
     "nock": "12.0.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha -r @std/esm --require babel-register --reporter spec",
+    "test": "mocha --require @babel/register 'test/**/**_test.js'",
     "watch": "npm-watch",
-    "start": "node_modules/nodemon/bin/nodemon.js -r @std/esm app.js",
+    "start": "nodemon --exec babel-node app.js",
     "lint": "eslint '**/*.{js,jsx}'",
     "checks": "npm run lint && npm run test"
   },
