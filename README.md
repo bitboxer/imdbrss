@@ -1,6 +1,6 @@
 # IMDb user ratings rss
 
-[![Build Status](https://travis-ci.com/bitboxer/imdbrss.svg?branch=master)](https://travis-ci.com/bitboxer/imdbrss)
+[![Build Status](https://github.com/bitboxer/imdbrss/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/bitboxer/imdbrss/actions/workflows/node.js.yml)
 
 This little tool creates a rss feed based on the public ratings of
 an IMDb user.
