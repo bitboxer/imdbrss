@@ -23,3 +23,7 @@ To get your IMDb user id go to your ratings and check for this part of the url:
 http://www.imdb.com/user/ur7019649/ratings
                          ---------
 ```
+
+# Development
+
+Before submitting a PR please run `yarn checks` to see if everything is working.
