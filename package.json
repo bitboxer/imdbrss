@@ -24,7 +24,7 @@
     "minimist": "^1.2.2",
     "mockdate": "^3.0.2",
     "moment": "^2.24.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.2",
     "npm-watch": "^0.7.0",
     "rss": "^1.2.2"
