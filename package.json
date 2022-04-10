@@ -23,7 +23,7 @@
     "koa-views": "^6.2.1",
     "minimist": "^1.2.2",
     "mockdate": "^3.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-fetch": "^2.6.7",
     "nodemon": "^2.0.2",
     "npm-watch": "^0.7.0",
